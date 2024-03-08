@@ -7,6 +7,7 @@ wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/sha
 echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 sudo apt update && sudo apt install terraform
 ```
+
 ## Instal AWS and Conigure on your CLI
 To install aws on your CLI, visit this [page](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) for appropriate commands as per your OS.
 
