@@ -1,0 +1,25 @@
+tasks:
+  - name: Install Terraform and AWS CLI
+    command: |
+      sudo apt-get update
+      sudo apt-get install -y unzip
+      curl -o /tmp/terraform.zip https://releases.hashicorp.com/terraform/0.15.0/terraform_0.15.0_linux_amd64.zip
+      unzip /tmp/terraform.zip -d /tmp
+      sudo mv /tmp/terraform /usr/local/bin/
+      rm /tmp/terraform.zip
+
+      curl "https://d1vvhvl2y92vvt.cloudfront.net/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+      unzip awscliv2.zip
+      sudo ./aws/install
+      rm -rf awscliv2.zip
+
+      terraform -v
+      aws --version
+
+init:
+  - name: Configure AWS Credentials
+    command:
+      aws configure set $AWS_ACCESS_KEY_ID
+      aws configure set $AWS_SECRET_ACCESS_KEY
+      aws configure set $AWS_DEFAULT_REGION
+      aws configure set $AWS_DEFAULT_OUTPUT
