@@ -6,5 +6,4 @@ image:
 # Optional: Configure VS Code extensions
 vscode:
   extensions:
-    - amazonwebservices.aws-toolkit-vscode
     - hashicorp.terraform
