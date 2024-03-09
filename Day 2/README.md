@@ -33,8 +33,6 @@ Now when you will excecute the command "terraform apply", it wil take the value 
 
 Even if you don't declare a variable in `variables.tf` file, and have set it in `.tfvars` file. You'll just get a warning, but you can run the code by fetching it from `.tfvars` file.
 
-### Assignment of values in `.tfvars`
-
 ## Setting of Variables
 I created a `main.tf` file, where I didn't hardcoded the values this time.
 Created another 2 files `varibales.tf` and `provider.tf` to store the vars and provider info.
