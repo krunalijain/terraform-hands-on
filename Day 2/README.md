@@ -1,5 +1,10 @@
 # Project Variabels and Condintional Expressions
 
+## Variables
+Variables are like params, setting values to variable names.
+There are 3 types of variables: Input, Output, & Local.
+For detailed info on Variables refer [Terraform Variables Documentation](https://developer.hashicorp.com/terraform/language/values)
+
 ## Setting of Variables
 I created a `main.tf` file, where I didn't hardcoded the values this time.
 Created another 2 files `varibales.tf` and `provider.tf` to store the vars and provider info.
