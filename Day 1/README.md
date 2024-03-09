@@ -1,3 +1,5 @@
+# Porject EC2 Instance Creation
+
 ## Install Terraform
 Run these commands in your terminal to install Terraform on your system.
 Refer to this [page](https://developer.hashicorp.com/terraform/install) to install as per your OS 
@@ -26,4 +28,9 @@ sudo ./aws/install
 3) In your terminal run `aws configure` command
 4) Enter the Access Key and Secret Access Key with `us-east-1` as your default region (whichever is preferred by you) and default output format as `json`.
 5) To verify - run `aws s3 ls` > it should list out the s3 buckets available on your AWS account.
+
+## Terraform script to create EC2 Instance (Basic)
+Please refer [`main.tf`](https://github.com/krunalijain/terraform-hands-on/blob/main/Day%201/main.tf)
+
+
 
