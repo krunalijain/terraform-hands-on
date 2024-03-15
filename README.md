@@ -9,7 +9,7 @@
 - [Setting up Variables](https://github.com/krunalijain/terraform-hands-on/blob/main/Day%202/README.md#variables)
 - [Setting up Providers](https://github.com/krunalijain/terraform-hands-on/blob/main/Day%202/README.md#to-set-a-provider-in-providertf-file)
 - [Referencing variables in resource blocks](https://github.com/krunalijain/terraform-hands-on/blob/main/Day%202/README.md#fetching-declared-vars-in-maintf)
-- [variabels.tf Vs .tfvars files](https://github.com/krunalijain/terraform-hands-on/blob/main/Day%202/README.md#variablestf-vs-tfvars-file
+- [variabels.tf Vs .tfvars files](https://github.com/krunalijain/terraform-hands-on/blob/main/Day%202/README.md#variablestf-vs-tfvars-file)
 
 ## [Day 3](https://github.com/krunalijain/terraform-hands-on/tree/main/Day%203) 
 - [What are Modules in Terraform?](https://github.com/krunalijain/terraform-hands-on/tree/main/Day%203#what-are-modules-in-terraform)
