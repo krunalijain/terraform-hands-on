@@ -49,7 +49,7 @@ default = "10.0.0.0/16"
 ### To set a Provider in `provider.tf` file
 The provider block specifies provider configuration information, such as authentication, alias, and cloud regions. 
 
-```
+```hcl
 provider "aws" {
   # Configuration options
   region = "us-east-1"
