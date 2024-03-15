@@ -13,7 +13,7 @@ Terraform overrides the default value assigned to the variable
 ### Example:
 This is your `variables.tf` file
 
-```
+```hcl
 variable "instance_type" {
  type = string
  default = "t2.micro"
@@ -40,7 +40,7 @@ Later we can fetch it in `main.tf` file.
 
 ### To Set a CIDR Variable 
 
-```
+```hcl
 variable "cidr"{
 default = "10.0.0.0/16"
 }
@@ -59,7 +59,7 @@ provider "aws" {
 ### Setting up `required_provider`
 The required_providers block specifies provider dependency information. 
 
-```
+```hcl
 terraform {
   required_providers {
     aws = {
@@ -72,7 +72,7 @@ terraform {
 
 ### Fetching declared Vars in `main.tf`
 
-```
+```hcl
 resource "aws_vpc" "my-vpc" {
   cidr_block = var.cidr
 }
